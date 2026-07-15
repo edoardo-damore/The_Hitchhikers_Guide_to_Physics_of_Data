@@ -83,21 +83,6 @@ source /mnt/miniconda3/bin/activate
 ```
 5. Create a virtual environment on the ephemeral disk:
 ```bash
-# this folder will store the environments
-mkdir /mnt/miniconda3/conda-envs 
-# remember to always specify it when creating a new environment
-conda create -p /mnt/miniconda3/conda-envs/myenv python=3.12
-# or when launching an existing one
-conda activate /mnt/miniconda3/conda-envs/myenv
-```
-6. (Optional) Create a soft link in the home directory for faster activation:
-```bash
-ln -sf /mnt/miniconda3/conda-envs/ . # in the home directory
-conda activate ~/conda-envs/myenv
-```
-Or even an alias if you feel fancy:
-```bash
-printf "\nalias myenv-act='conda activate /mnt/miniconda3/conda-envs/myenv'" >> ~/.bash_aliases
-source ~/.bashrc
-myenv-act # this will now activate myenv
+conda create -p myenv python=3.12
+conda activate myenv
 ```
