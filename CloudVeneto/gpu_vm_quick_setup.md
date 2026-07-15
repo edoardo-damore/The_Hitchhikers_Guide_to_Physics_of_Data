@@ -81,9 +81,9 @@ source /mnt/miniconda3/bin/activate
 ```bash
 /mnt/miniconda3/bin/conda init --all
 ```
-5. Restart the current terminal session:
+5. Start a new bash session:
 ```bash
-source ~/.bashrc
+bash
 ``` 
 6. Create a virtual environment on the ephemeral disk:
 ```bash
