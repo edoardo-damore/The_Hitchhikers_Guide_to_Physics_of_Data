@@ -81,7 +81,11 @@ source /mnt/miniconda3/bin/activate
 ```bash
 /mnt/miniconda3/bin/conda init --all
 ```
-5. Create a virtual environment on the ephemeral disk:
+5. Restart the current terminal session:
+```bash
+source ~/.bashrc
+``` 
+6. Create a virtual environment on the ephemeral disk:
 ```bash
 conda create -p myenv python=3.12
 conda activate myenv
